@@ -1,0 +1,17 @@
+apache:
+  $type: hidden-group
+
+  title:
+    $default: Example webserver
+  show_subtitle:
+    $type: boolean
+  subtitle:
+    $visibleIf: apache$show_subtitle == true
+
+  show_image:
+    $type: boolean
+    $default: true
+
+  background_color:
+    $type: color
+    $default: "#043158"

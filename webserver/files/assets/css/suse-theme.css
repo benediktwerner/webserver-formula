@@ -1,0 +1,147 @@
+/* Cross-product Error page stylesheet for SUSE */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto/Roboto-Bold.ttf') format('ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto/Roboto-Black.ttf') format('ttf');
+  font-weight: 700;
+}
+body {
+  background: #043158;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #f5f5f5;
+}
+
+body, html {
+  height: 100%;
+}
+
+header, section, footer .wrap {
+  width: 990px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  padding-top: 3em;
+  height: 41px;
+}
+
+section {
+  padding-top: 5em;
+  white-space: nowrap;
+  padding-bottom: 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+footer .wrap {
+  height: 50px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+/* Gridding system */
+
+.col-50 {
+  width: 50%;
+  display: inline-block;
+  vertical-align: bottom;
+  white-space: normal;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 1em;
+}
+
+/* Headings */
+
+h1 {
+  color: #3ad15e !important;
+  text-transform: uppercase;
+  font-size: 2.5em !important;
+  font-weight: 700;
+  margin-top: 0px;
+  line-height: 1em;
+}
+
+.title-highlight {
+  color: #9bfb63 !important;
+}
+
+/* Paragraphs */
+
+p {
+  margin-bottom: 1.4em;
+  line-height: 1.8em;
+}
+
+/* Responsiveness */
+
+@media (max-width: 990px) {
+  header, section, footer .wrap {
+    width: 100%;
+  }
+  .chameleon {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    padding-top: 1em;
+    height: 41px;
+  }
+  .suse-logo {
+    height: 30px;
+    margin-left: 1em;
+  }
+  .col-50 {
+    width: 49%;
+    vertical-align: middle;
+  }
+  footer .wrap {
+    padding-left: 1em;
+    height: 30px;
+  }
+}
+
+@media (max-width: 775px) {
+  .or-separation {
+    display: none;
+  }
+  .chameleon {
+    margin-bottom: 5em;
+  }
+}
+
+@media (max-width: 570px) {
+  .col-50 {
+    width: 100%;
+    display: block;
+  }
+  .col-50:first-of-type {
+    text-align: center;
+  }
+  .chameleon {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 0em;
+  }
+}

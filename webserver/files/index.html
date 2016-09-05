@@ -1,0 +1,47 @@
+{% from "webserver/map.jinja" import apache with context %}
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{ apache.title }}</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/suse-theme.css">
+
+  </head>
+  <body style="background-color: {{ apache.background_color }}">
+    <div class="wrapper">
+      <header>
+        <img class="suse-logo" src="assets/img/suse-logo.png" alt="SUSE Linux">
+      </header>
+      <section>
+        {% if apache.show_image %}
+        <div class="col-50">
+          <img class="chameleon" src="assets/img/chameleon.png" alt="SUSE chameleon">
+        </div>
+        {% endif %}
+        <div class="col-50">
+          <h1 style="color: #000; font-size: 8px">
+            {{ apache.title }}
+            {% if apache.show_subtitle %}
+            <br>
+            <span  style="color: #000;" class="title-highlight"> {{ apache.subtitle }}</span>
+            {% endif %}
+          </h1>
+          <ul style="font-size: 25px">
+            <li>Automate Linux provisioning, maintenance and compliance</li>
+            <li>Monitor and control configurations with <strong>Salt</strong></li>
+            <li>Optimize subscription usage</li>
+            <li>Enhance monitoring with Icinga/Nagios</li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <div class="wrap">
+          © 2016 SUSE ALL RIGHTS RESERVED
+        </div>
+      </footer>
+    </div>
+  
+
+</body></html>
