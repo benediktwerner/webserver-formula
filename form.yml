@@ -8,9 +8,14 @@ apache:
   subtitle:
     $visibleIf: apache$show_subtitle == true
 
-  show_image:
-    $type: boolean
-    $default: true
+  image:
+    $type: select
+    $values: ["chameleon", "tux", "no image"]
+    $default: chameleon
+
+  list_items:
+    $type: number
+    $default: 3
 
   background_color:
     $type: color

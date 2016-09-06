@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>{{ apache.title }}</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -15,11 +15,13 @@
         <img class="suse-logo" src="assets/img/suse-logo.png" alt="SUSE Linux">
       </header>
       <section>
-        {% if apache.show_image %}
         <div class="col-50">
+          {% if apache.image == "chameleon" %}
           <img class="chameleon" src="assets/img/chameleon.png" alt="SUSE chameleon">
+          {% elif apache.image == "tux" %}
+          <img class="tux" src="assets/img/tux.png" alt="Tux">
+          {% endif %}
         </div>
-        {% endif %}
         <div class="col-50">
           <h1 style="color: #000; font-size: 8px">
             {{ apache.title }}
@@ -29,10 +31,9 @@
             {% endif %}
           </h1>
           <ul style="font-size: 25px">
-            <li>Automate Linux provisioning, maintenance and compliance</li>
-            <li>Monitor and control configurations with <strong>Salt</strong></li>
-            <li>Optimize subscription usage</li>
-            <li>Enhance monitoring with Icinga/Nagios</li>
+          {% for i in range(apache.list_items) %}
+            <li>List item #{{ i + 1 }}</li>
+          {% endfor %}
           </ul>
         </div>
       </section>
@@ -42,6 +43,6 @@
         </div>
       </footer>
     </div>
-  
+
 
 </body></html>

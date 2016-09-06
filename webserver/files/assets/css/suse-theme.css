@@ -104,6 +104,10 @@ p {
     width: 100%;
     height: auto;
   }
+  .tux {
+    width: auto;
+    height: 100%;
+  }
   header {
     padding-top: 1em;
     height: 41px;
@@ -143,5 +147,8 @@ p {
     max-width: 250px;
     width: 100%;
     margin-bottom: 0em;
+  }
+  .tux {
+    max-width: 200px;
   }
 }
