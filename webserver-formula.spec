@@ -24,10 +24,10 @@ Release:        1%{?dist}
 Summary:        Example webserver Salt Formula for SUSE Manager
 
 License:        GPLv3+
-Url:		https://github.com/benediktwerner/%{name}
+Url:            https://github.com/benediktwerner/%{name}
 Source0:        https://github.com/benediktwerner/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-BuildArch:	noarch
+BuildArch:      noarch
 
 # This would be better with a macro that just strips "-formula" from %{name}
 %define fname webserver
