@@ -43,7 +43,7 @@ Example Salt Formula for SUSE Manager. Sets up a simple webserver with a configu
 %install
 mkdir -p %{buildroot}/usr/share/susemanager/formulas/states/%{fname}
 mkdir -p %{buildroot}/usr/share/susemanager/formulas/metadata/%{fname}
-cp -R %{fname} %{buildroot}/usr/share/susemanager/formulas/states/%{fname}
+cp -R %{fname} %{buildroot}/usr/share/susemanager/formulas/states
 cp -R form.yml %{buildroot}/usr/share/susemanager/formulas/metadata/%{fname}
 if [ -f metadata.yml ]
 then
