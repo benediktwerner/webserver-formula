@@ -17,6 +17,9 @@ apache:
     $type: number
     $default: 3
 
+  password:
+    $type: password
+
   background_color:
     $type: color
     $default: "#043158"

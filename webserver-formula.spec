@@ -25,7 +25,7 @@ Summary:        Example webserver Salt Formula for SUSE Manager
 
 License:        GPLv3+
 Url:            https://github.com/benediktwerner/%{name}
-Source0:        https://github.com/benediktwerner/%{name}-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
 
