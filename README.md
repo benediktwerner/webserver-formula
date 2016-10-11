@@ -1,2 +1,2 @@
 # Example webserver Salt Formula
-Exapmle webserver Salt Formula for SUSE Manager
+Example webserver Salt Formula for SUSE Manager
